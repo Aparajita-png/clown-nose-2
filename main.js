@@ -1,3 +1,6 @@
+function preload(){
+clown_nose=loadImage("https://i.postimg.cc/L6RHdfG9/pn.png");
+}
 function setup(){
 canvas=createCanvas(300,300);
 canvas.center();
@@ -10,7 +13,7 @@ function modelLoaded(){
  console.log('modelLoaded');
 }
 function draw(){
-image(video,0,0,300,300);
+image(clown_nose,noseX,noseY,300,300);
 circle(noseX,noseY,20);
 fill(255,0,0);
 stroke(255,0,0);
